@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2px;
+  background-image: url("/Img/calculadora.jpg");
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: palevioletred;
+  font-size: 48px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+
+}
+
+p {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration-color: black;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="number"],
+select {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(170, 49, 70);
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultado-out {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+}
+
+.escolherunidade {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.unidade-wrapper {
+  margin-right: 20px;
+  font-size: 10px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.resultado-container {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #d1f0d4;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+.label-valor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#valor {
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+  font-size: 38px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+footer {
+  text-align: left;
+  position: fixed; /*posição fixa na pg*/
+  bottom: 0;
+  width: 100%;
+  background-color:palevioletred;
+  height: 40px;
+  box-sizing: border-box; /*padding e a height estejam incluidos nas dimensoes*/
+}

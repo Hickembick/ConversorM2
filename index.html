@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Conversor de Unidades</h1>
+    <form id="converterForm">
+      <label for="valor" class="label-valor">
+        <h3>Valor:</h3>
+      </label>
+      <div class="input-wrapper">
+      <input type="number" id="valor" required>
+      <label for="categoria">
+      </div>
+        <p>Categorias:</p>
+      </label>
+      <select id="categoria" onchange="atualizarUnidades()">
+        <option value="comprimento">Comprimento</option>
+        <option value="peso">Peso</option>
+        <option value="temperatura">Temperatura</option>
+      </select>
+      <div class="escolherunidade">
+        <div class="unidade-wrapper">
+          <label for="unidadeOrigem">
+            <p>Unidade de Medida de Origem:</p>
+          </label>
+          <select id="unidadeOrigem"></select>
+        </div>
+        <div class="unidade-wrapper">
+          <label for="unidadeDestino">
+            <p>Unidade de Medida de Destino:</p>
+          </label>
+          <select id="unidadeDestino"></select>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="button" onclick="validarFormulario() && converter()">Converter</button>
+      </div>
+        <div class="resultado-out hidden" id="resultado"></div>
+    </form>
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+<footer>
+      <p>&copy; 2023 .Todos direitos reservados Jéssica Hickembick - Resilia ♥ Ebanx</p>
+</footer>
+</html>
